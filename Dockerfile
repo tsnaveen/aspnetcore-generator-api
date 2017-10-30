@@ -26,3 +26,16 @@ FROM microsoft/aspnetcore:2
 COPY --from=build-env /publish /publish
 WORKDIR /publish
 ENTRYPOINT ["dotnet", "api.dll"]
+
+# Integration stage
+FROM microsoft/aspnetcore-build:2 as integration-env
+
+WORKDIR /integration
+#   restore
+COPY integration/integration.csproj ./integration/
+RUN dotnet restore integration/integration.csproj
+#   copy src
+COPY . .
+#   integration test
+RUN dotnet test integration/integration.csproj
+

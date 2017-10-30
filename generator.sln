@@ -26,6 +26,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration", "{CFF81378-5A12-455D-8C7C-81A273A1F25E}"
+	ProjectSection(SolutionItems) = preProject
+		integration\docker-compose.yml = integration\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "integration", "integration\integration.csproj", "{BC605436-2B04-42DA-B5F4-C63EEA949C1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +67,18 @@ Global
 		{39B72998-3873-4965-BF05-8C7C0499080C}.Release|x64.Build.0 = Release|Any CPU
 		{39B72998-3873-4965-BF05-8C7C0499080C}.Release|x86.ActiveCfg = Release|Any CPU
 		{39B72998-3873-4965-BF05-8C7C0499080C}.Release|x86.Build.0 = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|x64.Build.0 = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +87,7 @@ Global
 		{63B73769-A6C1-46BA-8B5B-06E242E20286} = {0805B668-3840-47FA-920B-CBD02B31CC40}
 		{72E23E7A-AD88-46F9-9256-B2D0B6DF82C2} = {0805B668-3840-47FA-920B-CBD02B31CC40}
 		{39B72998-3873-4965-BF05-8C7C0499080C} = {688F6C7D-180C-4F94-96B5-E82A2B05ADB0}
+		{BC605436-2B04-42DA-B5F4-C63EEA949C1B} = {CFF81378-5A12-455D-8C7C-81A273A1F25E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EF38834-3752-4825-AA4F-B4AEE1788461}

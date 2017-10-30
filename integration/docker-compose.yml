@@ -1,0 +1,11 @@
+﻿version: '3.2'
+
+services: 
+  generator:
+    image: localhost:55000/gen:9
+    ports: 
+      - "8080:80"
+  mail:
+    image: mailhog/mailhog
+    ports: 
+      - "8025:8025"
