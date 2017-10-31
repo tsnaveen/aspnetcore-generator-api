@@ -33,6 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration", "integration"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "integration", "integration\integration.csproj", "{BC605436-2B04-42DA-B5F4-C63EEA949C1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "agent", "agent", "{9A5ABCFF-D1CC-48BF-B24E-57920C6A6F03}"
+	ProjectSection(SolutionItems) = preProject
+		infra\teamcity\agent\Dockerfile = infra\teamcity\agent\Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +93,7 @@ Global
 		{72E23E7A-AD88-46F9-9256-B2D0B6DF82C2} = {0805B668-3840-47FA-920B-CBD02B31CC40}
 		{39B72998-3873-4965-BF05-8C7C0499080C} = {688F6C7D-180C-4F94-96B5-E82A2B05ADB0}
 		{BC605436-2B04-42DA-B5F4-C63EEA949C1B} = {CFF81378-5A12-455D-8C7C-81A273A1F25E}
+		{9A5ABCFF-D1CC-48BF-B24E-57920C6A6F03} = {72E23E7A-AD88-46F9-9256-B2D0B6DF82C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EF38834-3752-4825-AA4F-B4AEE1788461}
