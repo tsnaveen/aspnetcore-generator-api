@@ -7,8 +7,8 @@ services:
     #  - "8080:80"
   mail:
     image: mailhog/mailhog
-    #ports: 
-    #  - "8025:8025"
+    ports: 
+      - "8025:8025"
   integration:
     image: localhost:55000/gen:i-${BUILD_NUMBER-10}
     build: .
