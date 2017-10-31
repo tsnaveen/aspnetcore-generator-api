@@ -2,10 +2,13 @@
 
 services: 
   generator:
-    image: localhost:55000/gen:9
+    image: localhost:55000/gen:10
     ports: 
       - "8080:80"
   mail:
     image: mailhog/mailhog
     ports: 
       - "8025:8025"
+  integration:
+    image: localhost:55000/gen:i-10
+    build: .
