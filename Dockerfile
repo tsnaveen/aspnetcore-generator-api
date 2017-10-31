@@ -28,14 +28,14 @@ WORKDIR /publish
 ENTRYPOINT ["dotnet", "api.dll"]
 
 # Integration stage
-FROM microsoft/aspnetcore-build:2 as integration-env
+#FROM microsoft/aspnetcore-build:2 as integration-env
 
-WORKDIR /integration
+#WORKDIR /integration
 #   restore
-COPY integration/integration.csproj ./integration/
-RUN dotnet restore integration/integration.csproj
+#COPY integration/integration.csproj ./integration/
+#RUN dotnet restore integration/integration.csproj
 #   copy src
-COPY . .
+#COPY . .
 #   integration test
-RUN dotnet test integration/integration.csproj
+#RUN dotnet test integration/integration.csproj
 
