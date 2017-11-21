@@ -1,0 +1,11 @@
+version: '3.3'
+
+services: 
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    image: ${IMAGE:-tsnaveen/aspnetcore-generator-api-test}
+    command: ${TEST_CMD:-dotnet test tests/tests.csproj}
+    ports: 
+      - "8080:80"
