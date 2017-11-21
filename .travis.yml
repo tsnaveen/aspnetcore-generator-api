@@ -9,4 +9,4 @@ branches:
 before_script:
   - chmod -R a+x .
 script: 
-  - ./build.sh
+  - ./publish.sh
