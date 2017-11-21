@@ -5,7 +5,7 @@
   "mono": "none",
   "dotnet": 2,
   "script": [
-    "powershell ./build.sh --quiet verify"
+    "./build.sh --quiet verify"
   ],
   "group": "stable",
   "os": "linux"
