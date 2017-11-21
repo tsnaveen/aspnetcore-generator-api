@@ -8,5 +8,5 @@
     "powershell ./build.sh --quiet verify"
   ],
   "group": "stable",
-  "os": "windows"
+  "os": "linux"
 }
