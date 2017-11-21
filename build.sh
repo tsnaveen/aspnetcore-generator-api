@@ -17,5 +17,5 @@ docker build -f Dockerfile.build -t ${IMAGE} .
 
 # Create and copy compiled files, then destroy
 docker create --name ${CONTAINER} ${IMAGE}
-docker cp ${CONTAINER}:/obj ./obj
+docker cp ${CONTAINER}:/publish ./publish
 docker rm ${CONTAINER}
