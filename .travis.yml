@@ -6,5 +6,7 @@ dotnet: 2.0.0
 branches:
   only:
     - master
+before_script:
+  - chmod -R a+x .
 script: 
   - ./build.sh
